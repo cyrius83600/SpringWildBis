@@ -11,7 +11,6 @@ import javax.persistence.Table;
 import java.sql.Date;
 
 @Entity
-@Table(name="wizard")
 public class Wizard {
 
     @Id

@@ -10,7 +10,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="school")
 public class School {
 
     @Id
@@ -20,6 +19,7 @@ public class School {
     private Long capacity;
     private String country;
 
+    @OneToMany(mappedBy = "school")
     private List<Wizard> wizards;
 
     
